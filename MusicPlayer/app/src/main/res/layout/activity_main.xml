@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/dark">
+
+    <Switch
+        android:id="@+id/change_theme"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="@string/change_theme"
+        android:textColor="@color/white"
+        android:layout_marginLeft="200dp"></Switch>
+
+
+    <TextView
+        android:id="@+id/musicText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Media Player"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="56dp"
+        android:layout_marginTop="80dp"/>
+
+    <ImageView
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/musicText"
+        android:layout_marginHorizontal="110dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/big_circle_white"
+        android:src="@drawable/music_white" />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/music"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_white"
+            android:background="@drawable/small_circle_white"/>
+        <ImageButton
+            android:layout_marginHorizontal="16dp"
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pause_white"
+            android:background="@drawable/small_circle_white"/>
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stop_white"
+            android:background="@drawable/small_circle_white"/>
+    </LinearLayout>
+</RelativeLayout>

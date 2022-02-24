@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+    <string name="change_theme">On/Off light theme</string>
+</resources>
