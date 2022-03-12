@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">base64Decoder</string>
+    <string name="text">Base 64 Decoder</string>
+</resources>
